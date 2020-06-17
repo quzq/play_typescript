@@ -1,6 +1,4 @@
-
-export default ()=>{
-class Foo{
+export default class Foo{
   x: number;
   y: number;
   constructor(x: number, y: number) {
@@ -20,9 +18,4 @@ class Foo{
     
     return null
   }
-}
-
-const foo = new Foo(2,3)
-foo.log()
-
 }
