@@ -15,12 +15,20 @@
   },
   "env": { "browser": true, "node": true, "es6": true },
   "rules": {
-    "indent":["error",2],
+    "indent":["error",2, {"SwitchCase": 1}],
+    "linebreak-style": ["error", "unix"],
     "@typescript-eslint/no-var-requires": 0,  // requireの仕様を許容
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/interface-name-prefix": 0,
     "prettier/prettier":[
       "error",
       {
-        "tabWidth": 2,       // 1 インデントあたりの空白数 (2)
+        "endOfLine": "lf",  // 改行コード
+        "semi": true, // 文末にセミコンを付与
+        "trailingComma": "es5", // 最後の要素にES5準拠のコンマを付与する
+        "singleQuote": true,
+        "tabWidth": 2, // 1 インデントあたりの空白数 (2)
+        "printWidth": 200, // １行の長さ（これ以上は自動改行）
         "useTabs": false     // インデントにタブを使用する (false)
       }
     ]

@@ -15,7 +15,7 @@ export default class Foo{
   }
 
   setStorage(key: string, value: string): any{
-    
+
     return null
   }
 }

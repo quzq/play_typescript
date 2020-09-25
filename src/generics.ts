@@ -7,6 +7,6 @@ export default () => {
 
   console.log(test<number>(1)); //=> 1
   console.log(test<string>("string")); //=> 文字列
-  
+
 
 }
