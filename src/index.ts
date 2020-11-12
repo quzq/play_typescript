@@ -8,5 +8,5 @@ import * as triangulation from "./triangulation";
 //const foo = new Class2(1,1)
 //foo.log()
 //generics()
-//arraySample();
-triangulation.default();
+arraySample();
+//triangulation.default();
