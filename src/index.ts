@@ -4,6 +4,7 @@ import generics from "./generics";
 import arraySample from "./array";
 import * as triangulation from "./triangulation";
 import * as favorite from "./favorite";
+import typeorm from "./typeorm";
 
 //classes()
 //const foo = new Class2(1,1)
@@ -12,4 +13,6 @@ import * as favorite from "./favorite";
 // arraySample();
 //triangulation.default();
 
-console.log(favorite.compareArray([2, 3, 4, 5, 6, 1], [2, 3, 4, 5, 6, 2]));
+//console.log(favorite.compareArray([2, 3, 4, 5, 6, 1], [2, 3, 4, 5, 6, 2]));
+
+typeorm();
