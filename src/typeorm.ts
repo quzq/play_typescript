@@ -123,6 +123,11 @@ export default async () => {
     const qb = createQueryBuilder().select('id,name').from(MUsers, "users")
       .leftJoinAndSelect('users.company', 'companies') // joinするテーブル（usersから相対表記）、そのテーブルのエイリアス名
     console.log(qb.getSql());
+    // const qb2 = createQueryBuilder().select('id,name').from(MUsers, "users")
+    //   .leftJoinAndMapOne('users.company', qb => {
+    //     qb.select().from(MCompanies, 'companies')
+    //   }, 'companies', 'companies.id = users.company_id') // joinするテーブル（usersから相対表記）、そのテーブルのエイリアス名
+    // console.log(qb2.getSql());
   }
   console.log("  ==== 複合主キーのテーブルへの結合 ===========================");
   {
@@ -134,7 +139,7 @@ export default async () => {
   {
     const qb = createQueryBuilder().select('id,name').from(MUsers, "users")
       .where(qb => {
-        const subQuery = qb.subQuery().select("").from(MCompanies, 'companies').where('companies.is_deleted = :is_deleted', { is_deleted: true }).getQuery()
+        const subQuery = qb.subQuery().select("companies.id").from(MCompanies, 'companies').where('companies.is_deleted = :is_deleted', { is_deleted: true }).getQuery()
         return "users.company_id in " + subQuery
       })
     console.log(qb.getSql());

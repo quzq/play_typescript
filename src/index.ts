@@ -5,6 +5,7 @@ import arraySample from "./array";
 import * as triangulation from "./triangulation";
 import * as favorite from "./favorite";
 import typeorm from "./typeorm";
+import polygonCentroid from "./polygonCentroid";
 
 //classes()
 //const foo = new Class2(1,1)
@@ -15,4 +16,5 @@ import typeorm from "./typeorm";
 
 //console.log(favorite.compareArray([2, 3, 4, 5, 6, 1], [2, 3, 4, 5, 6, 2]));
 
-typeorm();
+//typeorm();
+polygonCentroid()
