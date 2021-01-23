@@ -8,6 +8,9 @@
     "build": "tsc -p .",
     "build:live": "nodemon --watch 'src/**/*.ts' --exec 'node_modules/.bin/ts-node' src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "migration:generate": "typeorm migration:generate -n ",
+    "migration:run": "typeorm migration:run",
+    "migration:revert": "typeorm migration:revert",
     "tsc:ver": "tsc -v",
     "lint": "eslint"
   },
