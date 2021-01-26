@@ -12,11 +12,11 @@ import polygonCentroid from "./polygonCentroid";
 //const foo = new Class2(1,1)
 //foo.log()
 //generics()
-// arraySample();
+arraySample();
 //triangulation.default();
 
 //console.log(favorite.compareArray([2, 3, 4, 5, 6, 1], [2, 3, 4, 5, 6, 2]));
 
 //typeorm();
 //polygonCentroid()
-consolelog()
+//consolelog()
