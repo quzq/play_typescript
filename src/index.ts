@@ -8,6 +8,7 @@ import typeorm from "./typeorm";
 import consolelog from "./consolelog";
 import polygonCentroid from "./polygonCentroid";
 import types from './types'
+import regexp from './regexp'
 
 //classes()
 //const foo = new Class2(1,1)
@@ -17,7 +18,8 @@ import types from './types'
 //triangulation.default();
 
 //console.log(favorite.compareArray([2, 3, 4, 5, 6, 1], [2, 3, 4, 5, 6, 2]));
-types()
+//types()
+regexp()
 //typeorm();
 //polygonCentroid()
 //consolelog()
