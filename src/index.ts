@@ -7,16 +7,17 @@ import * as favorite from "./favorite";
 import typeorm from "./typeorm";
 import consolelog from "./consolelog";
 import polygonCentroid from "./polygonCentroid";
+import types from './types'
 
 //classes()
 //const foo = new Class2(1,1)
 //foo.log()
 //generics()
-arraySample();
+//arraySample();
 //triangulation.default();
 
 //console.log(favorite.compareArray([2, 3, 4, 5, 6, 1], [2, 3, 4, 5, 6, 2]));
-
+types()
 //typeorm();
 //polygonCentroid()
 //consolelog()
