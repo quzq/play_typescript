@@ -13,13 +13,13 @@ import regexp from './regexp'
 //classes()
 //const foo = new Class2(1,1)
 //foo.log()
-//generics()
+generics()
 //arraySample();
 //triangulation.default();
 
 //console.log(favorite.compareArray([2, 3, 4, 5, 6, 1], [2, 3, 4, 5, 6, 2]));
 //types()
-regexp()
+//regexp()
 //typeorm();
 //polygonCentroid()
 //consolelog()

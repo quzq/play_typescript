@@ -17,22 +17,22 @@ export class MUsers {
     type: "varchar",
     length: 10,
   })
-  userId: string = "";
+  userId = "";
 
   @Column({ name: "password", type: "varchar", length: 255 })
   password = "";
 
   @Column({ name: "name", type: "varchar", length: 20 })
-  name: string = "";
+  name = "";
 
   @Column({ name: "is_deleted", type: 'boolean' })
-  isDeleted: boolean = false
+  isDeleted = false
 
   @Column({ name: "company_id", type: "integer" })
-  company_id: number = 0;
+  company_id = 0;
 
   @Column({ name: "company_id", type: "integer" })
-  department_id: number = 0;
+  department_id = 0;
 
   @OneToOne((type) => MCompanies)
   @JoinColumn([
@@ -60,21 +60,21 @@ export class MCompanies {
   name = "";
 
   @Column({ name: "is_deleted", type: 'boolean' })
-  isDeleted: boolean = false
+  isDeleted = false
 }
 @Entity({ name: "m_departments" })
 export class MDepartments {
   @PrimaryColumn({ name: "company_id", type: "integer" })
-  companyId: string = "";
+  companyId = "";
 
   @PrimaryColumn({ name: "department_id", type: "integer" })
-  departmentId: string = "";
+  departmentId = "";
 
   @Column({ name: "name", type: "varchar", length: 20 })
   name = "";
 
   @Column({ name: "is_deleted", type: 'boolean' })
-  isDeleted: boolean = false
+  isDeleted = false
 }
 
 
