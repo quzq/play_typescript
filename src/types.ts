@@ -17,11 +17,11 @@ export default () => {
     console.log("  ==== NaN ");
     const nan: number = Number.NaN
     console.log(isNaN(nan))
-    const zero: number = 0
+    const zero = 0
     console.log(!zero)
 
     const foo: number = parseInt('a')
-    const bar: number = Number('a')
+    const bar = Number('a')
     console.log('foo', foo, isNaN(foo))
     console.log('bar', bar, isNaN(bar))
 
@@ -32,6 +32,13 @@ export default () => {
 
 
   }
-
+  {
+    console.log("  Date ");
+    const date1: Date = new Date()
+    const date2: Date = new Date()
+    console.log(typeof (date1))
+    console.log(date1.getTime(), date2.getTime(), date1.getTime() === date2.getTime())
+    console.log(date1.getTime(), date2.getTime(), date1 === date2)
+  }
 
 }
